@@ -1,11 +1,10 @@
 package Tareast06.Seccion01;
-import libPersonal.imprimir;
-import libPersonal.leer;
+import libPersonal.EYS;
 public class Ejercicio03 {
     public static void main (String []args){
-        imprimir.normal("dime una frase");
-        String texto= leer.texto();
-        imprimir.normal("tu frase contiene: "+nPalabras(texto)+" palabras");
+        EYS.imprimir("texto de ejemplo");
+        String texto= EYS.leer();
+        EYS.imprimir("tu frase contiene: "+nPalabras(texto)+" palabras");
 
     }
     public static int nPalabras(String texto){

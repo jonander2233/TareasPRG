@@ -1,12 +1,11 @@
 package Tareast06.Seccion01;
-import libPersonal.imprimir;
-import libPersonal.leer;
+import libPersonal.EYS;
 public class Ejercicio02 {
     public static void main(String []args){
         String frase,vocales="aeiouáéíóúàèìòùäëïöü",consonantes="bcdfghjklmnñpqrstvwxyz";
         int contadorVocales=0,contadorConsonantes=0;
-        imprimir.normal("introduce una frase");
-        frase = leer.texto();
+        EYS.imprimir("introduce una frase");
+        frase = EYS.leer();
         frase = frase.toLowerCase();
         for (int i = 0; i<frase.length();i++ ){
             frase.charAt(i);
@@ -18,7 +17,7 @@ public class Ejercicio02 {
                 contadorConsonantes++;
             }
         }
-        imprimir.normal("tu frase contiene: "+ contadorConsonantes+" consonantes y "+contadorVocales+" vocales.");
+        EYS.imprimir("tu frase contiene: "+ contadorConsonantes+" consonantes y "+contadorVocales+" vocales.");
     }
     
 }

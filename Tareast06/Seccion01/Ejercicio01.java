@@ -1,8 +1,8 @@
 package Tareast06.Seccion01;
-import libPersonal.imprimir;
+import libPersonal.EYS;
 public class Ejercicio01 {
     public static void main (String[]args){
-        imprimir.normal(ejer1("texto de prueba"));
+        EYS.imprimir(ejer1("texto de prueba"));
     }    
 
     public static String ejer1(String frase){
