@@ -15,4 +15,11 @@ public class EYS {
         String respuesta = lector.nextLine();
         return respuesta;
     }
+    public static int imprimirYLeerNum(String texto){
+        System.out.println(texto);
+        Scanner lector = new Scanner(System.in);
+        int respuesta = lector.nextInt();
+        return respuesta;
+        
+    }
 }
