@@ -7,7 +7,7 @@ public class Ejercicio05 {
         int nCaracteres=palabraLarga.length();
         EYS.imprimir("Dime un texto");
         texto = EYS.leer();
-        palabraLarga = palabraMasLarga("texto de prueba");
+        palabraLarga = palabraMasLarga(texto);
         EYS.imprimir("La palabra más larga es: "+palabraLarga+"que contiene "+ nCaracteres+" letras");
         
     }
