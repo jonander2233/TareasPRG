@@ -2,6 +2,11 @@ package libPersonal;
 import java.util.Scanner;
 public class EYS {
     private static Scanner lector = new Scanner(System.in);
+    public static char leerChar(){
+        String texto =lector.nextLine();
+        char caracter = texto.charAt(0); 
+        return caracter;
+    }
     public static String leer(){
        lector = new Scanner(System.in);
         String texto = lector.nextLine();
@@ -25,4 +30,15 @@ public class EYS {
         return respuesta;
         
     }
+    public static void imprimirNum(int num){
+        System.out.println(num);
+    }
+    // ----------------------------------------------------------------------------------
+    public static void leerArrayChar(char[] letras){
+        for (int i=0; i<letras.length;i++){
+            letras[i] = EYS.leerChar(); 
+        }
+        
+    }        
 }
+    
