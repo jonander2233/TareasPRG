@@ -2,6 +2,7 @@ package libPersonal;
 import java.util.Scanner;
 public class EYS {
     private static Scanner lector = new Scanner(System.in);
+    public static void imprimirConFormato
     public static char leerChar(){
         String texto =lector.nextLine();
         char caracter = texto.charAt(0); 
@@ -38,7 +39,11 @@ public class EYS {
         for (int i=0; i<letras.length;i++){
             letras[i] = EYS.leerChar(); 
         }
-        
     }        
+    public static void leerArrayNum(int[]nums){
+        for (int i=0; i < nums.length ;i++){
+            nums[i] = EYS.leerNum();
+        }
+    }
 }
     

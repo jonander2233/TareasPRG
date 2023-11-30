@@ -9,6 +9,9 @@ public class Arrays {
     }
     return resultado.toString();            //devuelve el conjunto de elemntos en forma de string 
     }
+
+
+
     public static String arrayDevolverImpares(char[]letras){
     StringBuilder resultado = new StringBuilder();          //llamada a stringBuilder y lo llama "resultado"
 
@@ -17,4 +20,8 @@ public class Arrays {
     }
     return resultado.toString();            //devuelve el conjunto de elemntos en forma de string 
     }
+
+
+    
+
 }
