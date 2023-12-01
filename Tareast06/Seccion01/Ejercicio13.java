@@ -1,17 +1,18 @@
-package Tareast06.Seccion01;
-import libPersonal.EYS;
+
+package tareast06.seccion01;
+import libpersonal.Eys;
 public class Ejercicio13 {
     public static void main(String[]args) {
         int[] numeros = new int[10];
         float suma=0;
-        EYS.imprimir("Introduce 10 numeros");
+        Eys.imprimir("Introduce 10 numeros");
         for (int i=0; i < numeros.length ;i++){
-            numeros[i] = EYS.leerNum();
+            numeros[i] = Eys.leerNum();
         }
         for (int i=0; i < numeros.length ;i++){
             suma += numeros[i];
         }
         float media = suma /numeros.length;
-        EYS.imprimir("la media de los numeros ingresados es: "+media);
+        Eys.imprimir("la media de los numeros ingresados es: "+media);
     }
 }

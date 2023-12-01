@@ -1,4 +1,4 @@
-package libPersonal;
+package libpersonal;
 
 public class Arrays {
     public static String arrayDevolverPares(char[]letras){

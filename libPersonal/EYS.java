@@ -1,8 +1,7 @@
-package libPersonal;
+package libpersonal;
 import java.util.Scanner;
-public class EYS {
+public class Eys {
     private static Scanner lector = new Scanner(System.in);
-    public static void imprimirConFormato
     public static char leerChar(){
         String texto =lector.nextLine();
         char caracter = texto.charAt(0); 
@@ -37,12 +36,12 @@ public class EYS {
     // ----------------------------------------------------------------------------------
     public static void leerArrayChar(char[] letras){
         for (int i=0; i<letras.length;i++){
-            letras[i] = EYS.leerChar(); 
+            letras[i] = Eys.leerChar(); 
         }
     }        
     public static void leerArrayNum(int[]nums){
         for (int i=0; i < nums.length ;i++){
-            nums[i] = EYS.leerNum();
+            nums[i] = Eys.leerNum();
         }
     }
 }

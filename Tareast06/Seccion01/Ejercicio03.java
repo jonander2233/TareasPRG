@@ -1,10 +1,10 @@
-package Tareast06.Seccion01;
-import libPersonal.EYS;
+package tareast06.seccion01;
+import libpersonal.Eys;
 public class Ejercicio03 {
     public static void main (String []args){
-        EYS.imprimir("texto de ejemplo");
-        String texto= EYS.leer();
-        EYS.imprimir("tu frase contiene: "+nPalabras(texto)+" palabras");
+        Eys.imprimir("texto de ejemplo");
+        String texto= Eys.leer();
+        Eys.imprimir("tu frase contiene: "+nPalabras(texto)+" palabras");
 
     }
     public static int nPalabras(String texto){

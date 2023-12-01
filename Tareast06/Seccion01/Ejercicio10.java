@@ -1,15 +1,15 @@
-package Tareast06.Seccion01;
+package tareast06.seccion01;
 
-import libPersonal.EYS;
+import libpersonal.Eys;
 
 public class Ejercicio10 {
     public static void main (String []args){
-        String palabra = EYS.imprimirYLeer("Dime una palabra");
+        String palabra = Eys.imprimirYLeer("Dime una palabra");
         boolean esONo = palindroma(palabra);
         if (esONo == true){
-            EYS.imprimir("es palindroma");
+            Eys.imprimir("es palindroma");
         }else{
-            EYS.imprimir("no es palindroma");
+            Eys.imprimir("no es palindroma");
         }
     }    
     public static boolean palindroma(String palabra){

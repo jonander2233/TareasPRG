@@ -1,14 +1,14 @@
-package Tareast06.Seccion01;
-import libPersonal.EYS;
+package tareast06.seccion01;
+import libpersonal.Eys;
 
 public class Ejercicio05 {
     public static void main(String []args){
         String texto,palabraLarga="";
         int nCaracteres=palabraLarga.length();
-        EYS.imprimir("Dime un texto");
-        texto = EYS.leer();
+        Eys.imprimir("Dime un texto");
+        texto = Eys.leer();
         palabraLarga = palabraMasLarga(texto);
-        EYS.imprimir("La palabra más larga es: "+palabraLarga+"que contiene "+ nCaracteres+" letras");
+        Eys.imprimir("La palabra más larga es: "+palabraLarga+"que contiene "+ nCaracteres+" letras");
         
     }
     public static String palabraMasLarga(String texto){

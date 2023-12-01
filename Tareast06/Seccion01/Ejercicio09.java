@@ -1,11 +1,11 @@
-package Tareast06.Seccion01;
+package tareast06.seccion01;
 
-import libPersonal.EYS;
+import libpersonal.Eys;
 
 public class Ejercicio09 {
     public static void main(String []args){
         String frase="";
-        frase = EYS.imprimirYLeer("Dime una frase");
+        frase = Eys.imprimirYLeer("Dime una frase");
         String fraseImpares="",frasePares="";
         for (int i =0; i<frase.length();i++){
             char letra = frase.charAt(i);
@@ -16,6 +16,6 @@ public class Ejercicio09 {
                 frasePares += letra;
             }
         }
-        EYS.imprimir(fraseImpares);
+        Eys.imprimir(fraseImpares);
     }
 }

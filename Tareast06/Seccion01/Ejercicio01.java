@@ -1,8 +1,8 @@
-package Tareast06.Seccion01;
-import libPersonal.EYS;
+package tareast06.seccion01;
+import libpersonal.Eys;
 public class Ejercicio01 {
     public static void main (String[]args){
-        EYS.imprimir(ejer1("texto de prueba"));
+        Eys.imprimir(ejer1("texto de prueba"));
     }    
 
     public static String ejer1(String frase){

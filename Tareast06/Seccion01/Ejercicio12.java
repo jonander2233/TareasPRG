@@ -1,4 +1,4 @@
-package Tareast06.Seccion01;
+package tareast06.seccion01;
 
 public class Ejercicio12 {
     

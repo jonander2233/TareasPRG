@@ -1,10 +1,10 @@
-package Tareast06.Seccion01;
+package tareast06.seccion01;
 
-import libPersonal.EYS;
+import libpersonal.Eys;
 
 public class Ejercicio08 {
     public static void main (String [] args){
-        String texto = EYS.imprimirYLeer("dime una frase");
+        String texto = Eys.imprimirYLeer("dime una frase");
         texto=texto.trim();
         String[] palabras = texto.split("\\s+");
         for ( int i =0; i<palabras.length; i++){
