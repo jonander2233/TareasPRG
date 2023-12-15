@@ -44,5 +44,10 @@ public class Eys {
             nums[i] = Eys.leerNum();
         }
     }
+    public static void leerArrayDouble(double[]nums){
+        for (int i=0; i < nums.length ;i++){
+            nums[i] = Eys.leerNum();
+        }
+    }
 }
     
