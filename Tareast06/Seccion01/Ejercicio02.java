@@ -1,7 +1,7 @@
 package tareast06.seccion01;
 import libpersonal.Eys;
 public class Ejercicio02 {
-    public static void main(String []args){
+    public static void ejer02(){
         String frase,vocales="aeiouáéíóúàèìòùäëïöü",consonantes="bcdfghjklmnñpqrstvwxyz";
         int contadorVocales=0,contadorConsonantes=0;
         Eys.imprimir("introduce una frase");

@@ -3,7 +3,7 @@ import java.util.Random;
 
 import libpersonal.Eys;
 class Ejercicio16 {
-    public static void main (String []args){
+    public static void ejer16 (){
         Random aleatorio = new Random();        
         double[] notas = new double[30];            //creo un array y un puntero llamado "aleatorio"
         int notaMax = 10;

@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Ejercicio18 {
   
-    public static void main(String[] args) {
+    public static void ejer18 () {
     
         int[] array1 = generarArray();
         int[] array2 = generarArray();

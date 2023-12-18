@@ -1,7 +1,7 @@
 package tareast06.seccion01;
 import libpersonal.Eys;
 public class Ejercicio01 {
-    public static void main (String[]args){
+    public static void ejer01 (){
         Eys.imprimir(ejer1("texto de prueba"));
     }    
 

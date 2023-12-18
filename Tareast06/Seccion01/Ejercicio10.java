@@ -3,7 +3,7 @@ package tareast06.seccion01;
 import libpersonal.Eys;
 
 public class Ejercicio10 {
-    public static void main (String []args){
+    public static void ejer10 (){
         String palabra = Eys.imprimirYLeer("Dime una palabra");
         boolean esONo = palindroma(palabra);
         if (esONo == true){

@@ -2,7 +2,7 @@ package tareast06.seccion01;
 import libpersonal.Eys;
 
 public class Ejercicio05 {
-    public static void main(String []args){
+    public static void ejer05(){
         String texto,palabraLarga="";
         int nCaracteres=palabraLarga.length();
         Eys.imprimir("Dime un texto");

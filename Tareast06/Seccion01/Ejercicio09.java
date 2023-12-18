@@ -3,7 +3,7 @@ package tareast06.seccion01;
 import libpersonal.Eys;
 
 public class Ejercicio09 {
-    public static void main(String []args){
+    public static void ejer09 (){
         String frase="";
         frase = Eys.imprimirYLeer("Dime una frase");
         String fraseImpares="",frasePares="";

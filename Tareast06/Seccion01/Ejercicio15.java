@@ -1,7 +1,7 @@
 package tareast06.seccion01;
 import libpersonal.Eys;
 public class Ejercicio15 {
-    public static void main (String[]args){
+    public static void ejer15 (){
     int[] numeros = new int[20];
     Eys.imprimir("dime 20 numeros");
     Eys.leerArrayNum(numeros);

@@ -3,7 +3,7 @@ package tareast06.seccion01;
 import libpersonal.Eys;
 
 class Ejercicio11 {
-    public static void main (String []args){
+    public static void ejer11 (){
         String nombreMayus, primerApellidoMayus, segundoApellidoMayus, nombre, primerApellido, segundoApellido, nombreMinus, primerApellidoMinus, segundoApellidoMinus;
         
         nombre = Eys.imprimirYLeer("Ingrese su nombre");

@@ -1,7 +1,7 @@
 package tareast06.seccion01;
 import libpersonal.Eys;
 public class Ejercicio03 {
-    public static void main (String []args){
+    public static void ejer03 (){
         Eys.imprimir("texto de ejemplo");
         String texto= Eys.leer();
         Eys.imprimir("tu frase contiene: "+nPalabras(texto)+" palabras");

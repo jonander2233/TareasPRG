@@ -2,7 +2,7 @@
 package tareast06.seccion01;
 import libpersonal.Eys;
 public class Ejercicio13 {
-    public static void main(String[]args) {
+    public static void ejer13() {
         int[] numeros = new int[10];
         float suma=0;
         Eys.imprimir("Introduce 10 numeros");
