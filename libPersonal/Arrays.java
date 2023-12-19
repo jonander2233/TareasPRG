@@ -35,4 +35,51 @@ public class Arrays {
     }
 
 
+
+    //metodo para obtener multiplos de un numero (se devuelve un array nuevo con esos numeros)
+    public static int[] obtenerMultiplos(int[]arrayNumeros, int multiplo){
+        if (multiplo >0){
+
+            int cantidadMultiplos=0;
+            for(int numero: arrayNumeros){
+                if (numero % multiplo == 0){
+                    cantidadMultiplos++;
+                }
+            }
+    
+            int[] arrayMultiplos = new int[cantidadMultiplos];
+            
+            int posicion=0;
+            for(int numero1: arrayNumeros){
+                if (numero1 % multiplo == 0){
+                    arrayMultiplos[posicion] = numero1;
+                    posicion++;
+                }
+            }
+            return arrayMultiplos;
+        }
+        else{
+            return null;
+        }
+    }
+
+
+
+
+    public static boolean obtenerSiNumEstaEnArray (int[]arrayNumeros, int num){
+        boolean resultado=false;
+        int resultado1=0;
+        for (int numero:arrayNumeros){
+            if(num == numero){
+                resultado1++;
+            }else{
+                
+            }
+            if (resultado1 >0){
+                resultado=true;
+            }
+        }
+        return resultado;
+    }
+
 }
