@@ -10,11 +10,11 @@ public class Eys {
 // --------------------------Enteros--------------------------------------------------------
     public static int imprimirYLeerNum(String texto){
         System.out.println(texto);
-        int respuesta = lector.nextInt();   
+        int respuesta = Integer.parseInt(lector.nextLine());
         return respuesta;
     }
     public static int leerNum(){
-        int respuesta = lector.nextInt();
+        int respuesta = Integer.parseInt(lector.nextLine());
         return respuesta;
         
     }
@@ -57,5 +57,28 @@ public class Eys {
             System.out.println("Elemento " + i + ": " + arrayInt[i]);
         }
     }
-}
+
+    public static int imprimirMenu4 (String opcion1,String opcion2,String opcion3,String opcion4){
+        int opcion =0;
+        Eys.imprimir("MENU PRINCIPAL \n ========================");
+        Eys.imprimir("1.-"+opcion1);        
+        Eys.imprimir("2.-"+opcion2);        
+        Eys.imprimir("3.-"+opcion3);        
+        Eys.imprimir("4.-"+opcion4);        
+        Eys.imprimir("0.-Salir del menu.");        
+        opcion = Eys.imprimirYLeerNum("Selecciona una opcion: \n");
+        return opcion;
+    }
     
+
+
+// variable = Integer.parseint(lector.nextLine());
+// variable = Double.parseDouble(lector.nextLine());
+
+
+
+}
+
+    
+
+

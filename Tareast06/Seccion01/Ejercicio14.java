@@ -7,7 +7,7 @@ public class Ejercicio14 {
         char[] letras = new char[10];
         Eys.imprimir("introduce 10 letras");
         Eys.leerArrayChar(letras);              //pregunta al usuario el contenido del array y lo mete dentro de este
-        resultado = Arrays.arrayDevolverPares(letras);
+        resultado = Arrays.arrayDevolverPosicionPar(letras);
         Eys.imprimir(resultado);
     }
 }

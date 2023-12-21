@@ -3,27 +3,30 @@ import java.util.Random;
 
 
 public class Arrays {
-    public static Random aleatorio = new Random();
+    private static Random aleatorio = new Random();
 
-    public static String arrayDevolverPares(char[]letras){
-    StringBuilder resultado = new StringBuilder();          //llamada a stringBuilder y lo llama "resultado"
+    public static String arrayDevolverPosicionPar(char[]letras){
+        StringBuilder resultado = new StringBuilder();           
 
-    for (int i=1;i<letras.length;i+=2){
-        resultado.append(letras[i]);         //concatena los elementos del array
+        for (int i=1;i<letras.length;i+=2){
+            resultado.append(letras[i]);         
+        }
+        return resultado.toString();            
     }
-    return resultado.toString();            //devuelve el conjunto de elemntos en forma de string 
-    }
 
 
 
-    public static String arrayDevolverImpares(char[]letras){
-    StringBuilder resultado = new StringBuilder();          //llamada a stringBuilder y lo llama "resultado"
+
+    public static String arrayDevolverPosicionImpar(char[]letras){
+    StringBuilder resultado = new StringBuilder();          
 
     for (int i=0;i<letras.length;i+=2){
-        resultado.append(letras[i]);         //concatena los elementos del array
+        resultado.append(letras[i]);         
     }
-    return resultado.toString();            //devuelve el conjunto de elemntos en forma de string 
+    return resultado.toString();            
     }
+
+
 
 
 
@@ -33,6 +36,8 @@ public class Arrays {
             arrayNumeros[i] = aleatorio.nextInt(max- min + 1) + min; 
         }
     }
+
+
 
 
 
@@ -66,6 +71,8 @@ public class Arrays {
 
 
 
+
+    //metodo para obtener si un número en concreto está en el array
     public static boolean obtenerSiNumEstaEnArray (int[]arrayNumeros, int num){
         boolean resultado=false;
         int resultado1=0;
@@ -82,4 +89,44 @@ public class Arrays {
         return resultado;
     }
 
+    public static int[] ordenarBurbuja(int[] arrayNums){
+        return null;
+    }
+
+    //metodo para obtener los números pares de un array de numeros enteros y su posición en el array
+    public static void imprimirParesOImpares(int[]arrayNums, boolean pares){
+        if (pares == true){
+            for (int i =0; i<arrayNums.length; i++){
+                if (arrayNums[i] % 2 == 0){
+                    Eys.imprimir("par numero "+ i +" es "+ arrayNums[i] );
+                }
+            }
+        }else if (pares == false){
+             for (int i =0; i<arrayNums.length; i++){
+                if (arrayNums[i] % 2 == 1){
+                    Eys.imprimir("impar numero "+ i +" es "+ arrayNums[i] );
+                }
+            }
+        }
+
+    }
+    //metodo para obtener multiplos de un numero e imprimirlos junto a su posición
+    public static void imprimirMultiplos(int[]arrayNumeros, int multiplo){
+        if (multiplo >0){
+            for(int i=0; i<arrayNumeros.length;i++){
+                if(arrayNumeros[i] % multiplo ==0){
+                    Eys.imprimir("El numero "+ arrayNumeros[i]+" en la posicion "+ i +" es multiplo de "+ multiplo );
+                }
+            }
+        }
+    }
+    public static int[] devolverInverso(int[] arrayAInvertir){
+        int[] arrayInvertido = new int[arrayAInvertir.length];
+        int contador=0;
+        for(int i = arrayAInvertir.length-1;i>=0;i--){
+            arrayInvertido[contador]=arrayAInvertir[i];
+            contador++;
+        }
+        return arrayInvertido;
+    }
 }
