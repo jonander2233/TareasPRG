@@ -7,18 +7,31 @@ public class Eys {
         String texto = lector.nextLine();
         return texto;
     }
+// --------------------------Reales--------------------------------------------------------
+    public static double imprimirYLeerDouble(String texto){
+        System.out.println(texto);
+        double respuesta = Double.parseDouble(lector.nextLine());
+        return respuesta;
+    }
+    public static double leerDouble(){
+        double respuesta = Double.parseDouble(lector.nextLine());
+        return respuesta;
+    }
+    public static void imprimirDouble(double num){
+        System.out.println(num);
+    }
 // --------------------------Enteros--------------------------------------------------------
-    public static int imprimirYLeerNum(String texto){
+    public static int imprimirYLeerInt(String texto){
         System.out.println(texto);
         int respuesta = Integer.parseInt(lector.nextLine());
         return respuesta;
     }
-    public static int leerNum(){
+    public static int leerInt(){
         int respuesta = Integer.parseInt(lector.nextLine());
         return respuesta;
         
     }
-    public static void imprimirNum(int num){
+    public static void imprimirInt(int num){
         System.out.println(num);
     }
 // --------------------------Char--------------------------------------------------------
@@ -44,12 +57,12 @@ public class Eys {
     }        
     public static void leerArrayNum(int[]nums){
         for (int i=0; i < nums.length ;i++){
-            nums[i] = Eys.leerNum();
+            nums[i] = Eys.leerInt();
         }
     }
     public static void leerArrayDouble(double[]nums){
         for (int i=0; i < nums.length ;i++){
-            nums[i] = Eys.leerNum();
+            nums[i] = Eys.leerInt();
         }
     }
     public static void imprimirArrayEnteros (int[]arrayInt){
@@ -66,7 +79,7 @@ public class Eys {
         Eys.imprimir("3.-"+opcion3);        
         Eys.imprimir("4.-"+opcion4);        
         Eys.imprimir("0.-Salir del menu.");        
-        opcion = Eys.imprimirYLeerNum("Selecciona una opcion: \n");
+        opcion = Eys.imprimirYLeerInt("Selecciona una opcion: \n");
         return opcion;
     }
     

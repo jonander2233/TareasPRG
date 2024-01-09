@@ -120,6 +120,9 @@ public class Arrays {
             }
         }
     }
+
+    
+    //metodo para obtener las posiciones del array invertidas
     public static int[] devolverInverso(int[] arrayAInvertir){
         int[] arrayInvertido = new int[arrayAInvertir.length];
         int contador=0;
@@ -128,5 +131,17 @@ public class Arrays {
             contador++;
         }
         return arrayInvertido;
+    }
+
+    //metodo para ir sumando las posiciones de un array y guardar el resultado en otro 
+    public static int[] sumatorio(int[]arrayASumar){
+        int[] arraySumado = new int[arrayASumar.length];
+        int suma = 0;
+        for(int i =0;i<arrayASumar.length;i++){
+            suma = suma + arrayASumar[i];
+            arraySumado[i]=suma;
+        }
+        
+        return arraySumado;
     }
 }

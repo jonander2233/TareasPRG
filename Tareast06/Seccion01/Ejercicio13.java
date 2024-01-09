@@ -7,7 +7,7 @@ public class Ejercicio13 {
         float suma=0;
         Eys.imprimir("Introduce 10 numeros");
         for (int i=0; i < numeros.length ;i++){
-            numeros[i] = Eys.leerNum();
+            numeros[i] = Eys.leerInt();
         }
         for (int i=0; i < numeros.length ;i++){
             suma += numeros[i];
