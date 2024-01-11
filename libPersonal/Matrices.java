@@ -3,7 +3,7 @@ package libpersonal;
 import java.util.Random;
 
 public class Matrices {
-    public static void RellenarMatriz (int[][] matriz, int min, int max){
+    public static void rellenarMatriz (int[][] matriz, int min, int max){
          Random aleatorio = new Random();
         // int[][] matriz = new int[4][8];
         for(int x = 0; x < matriz.length; x ++){
